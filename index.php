@@ -28,10 +28,19 @@ echo $root;
 //$aluno->insert();
 //echo $aluno;
 
+
+//Alterar informações do usuario
+/*
 $usuario = new Usuario();
 $usuario->loadById(8);
 $usuario->update("Gui Pires", "44444");
+echo $usuario;
+*/
+
+
+$usuario = new Usuario();
+$usuario->loadById(8);
+$usuario->delete();
 
 echo $usuario;
-
 ?>
